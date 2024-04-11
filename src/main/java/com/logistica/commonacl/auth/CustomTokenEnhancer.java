@@ -31,9 +31,7 @@ public class CustomTokenEnhancer implements TokenEnhancer {
         Map<String, Object> additionalInfo = new HashMap<>();
         // Obtén los detalles del usuario y añade la información que necesitas
         
-        Usuario usuario = (Usuario) usuarioRepository.findByLogin(authentication.getName()); 
-        additionalInfo.put("grupo", usuario.getIdGrupo()); // Ejemplo, añade aquí los datos que necesitas
-        
+        Usuario usuario = (Usuario) usuarioRepository.findByLogin(authentication.getName());                 
         // Puedes añadir más atributos del usuario aquí
 
         ((DefaultOAuth2AccessToken) accessToken).setAdditionalInformation(additionalInfo);

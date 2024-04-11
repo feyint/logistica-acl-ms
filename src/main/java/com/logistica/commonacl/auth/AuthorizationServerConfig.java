@@ -36,7 +36,7 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
 
     @Override
     public void configure(ClientDetailsServiceConfigurer clients) throws Exception {
-        clients.inMemory().withClient("ipuc-soli-app")
+        clients.inMemory().withClient("logistica-app")
                 .secret(bCryptPasswordEncoder.encode("12345"))
                 .scopes("read","write")
                 .authorizedGrantTypes("password", "refresh_token")

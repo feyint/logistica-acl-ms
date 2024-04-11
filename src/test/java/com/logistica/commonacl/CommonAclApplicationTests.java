@@ -1,4 +1,4 @@
-package com.siliconcode.commonacl;
+package com.logistica.commonacl;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

@@ -31,8 +31,7 @@ public class Usuario {
     private List<Rol> roles;
     
        
-    private Integer idGrupo;
-
+ 
     public Integer getId() {
         return id;
     }
@@ -71,14 +70,6 @@ public class Usuario {
 
     public void setRoles(List<Rol> roles) {
         this.roles = roles;
-    }
-
-    public Integer getIdGrupo() {
-        return idGrupo;
-    }
-
-    public void setIdGrupo(Integer idGrupo) {
-        this.idGrupo = idGrupo;
     }
     
     
